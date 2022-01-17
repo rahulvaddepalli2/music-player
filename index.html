@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <title>First 50 Songs 🎵</title>
+    </head>
+    <body>
+        <h1>First 50 Songs 🎵</h1>
+
+        <div class="music-container">
+            <div class="music-info">
+                <h4 id="title">Ukelele</h4>
+                <div class="progress-container">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+            <audio src="music/ukelele.mp3" id="audio"></audio>
+
+            <div class="img-container">
+                <img src="images/ukelele.jpg" alt="music-cover" id="cover">
+            </div>
+
+            <div class="navigation">
+                <button id="prev" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="action-btn action-btn-big">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="next" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>
+        </div>
+
+        <button class="button button1">Click for Random Song</button>
+
+        <select name='song-select' id="selectSong" onchange="selectFunction()">
+            <option selected disabled>Choose Song Here</option>
+        </select>
+
+
+        <script src="script.js"></script>
+
+        <div class="footer">
+            <h3>Social Media:</h3>
+            <a href="https://www.youtube.com/channel/UCDaIdLgZr1FsVDYxWMXYW5g" class="fab fa-youtube"></a>
+            <a href="https://twitter.com/rahulvaddepalli" class="fab fa-twitter"></a>
+        </div>
+        
+    </body>
+</html>
